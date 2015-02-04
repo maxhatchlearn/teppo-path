@@ -1,8 +1,9 @@
 Learning Puppet
 =====================================
 
-### Welcome
+## Welcome
 
+### This is Learning Puppet
 
 This is Learning Puppet, a series of lessons about managing system configuration with Puppet Enterprise. [Installation instructions](https://docs.puppetlabs.com/pe/latest/install_basic.html) and [a complete reference to the Puppet language](https://docs.puppetlabs.com/puppet/latest/reference/lang_summary.html) are available elsewhere on the site; this series is meant to be a guided tour to building things with Puppet.
 
@@ -34,10 +35,10 @@ To begin with, you won't need separate agent and master VMs; this VM can act in 
 
 [Learning Puppet](https://docs.puppetlabs.com/learning/introduction.html) by [Puppet Labs](https://puppetlabs.com) is licensed under [CC BY-SA 3.0 United States](http://creativecommons.org/licenses/by-sa/3.0/us).
 
-**********
+*************************
 
-VM Tips
-=====================================
+## VM Tips
+
 
 ### Importing the VM into VirtualBox
 
@@ -59,13 +60,15 @@ Parallels Desktop 7 on OS X can import the VMX version of this VM, but it requir
 
 If you attempt to start the VM without changing the location of the disk, it will probably kernel panic.
 
-### Configuring Virtual Networking
+****************************
 
-#### With VMware
+## Configuring Virtual Networking
+
+### With VMware
 
 If you are using a VMware virtualization product, you can leave the VM's networking in its default NAT mode. This will let it contact your host computer, any other VMs being run in NAT mode, the local network, and the outside internet; the only restriction is that computers outside your host computer can't initiate connections with it. If you eventually need other computers to be able to contact your VM, you can change its networking mode to Bridged.
 
-#### With VirtualBox
+### With VirtualBox
 
 VirtualBox's NAT mode is severely limited, and will not work with the later agent/master lessons. **You should change the VM's network mode to Bridged Adapter before starting the VM for the first time.**
 
@@ -91,8 +94,9 @@ To manually assign an IP address to a host-only adapter:
 
 **********
 
-Resources and the RAL
-=====================================
+## Resources and the RAL
+
+### Log into the Learning Puppet
 
 Log into the Learning Puppet VM as root, and run `puppet resource service`. This command will return something like the following:
 
