@@ -35,7 +35,7 @@ To begin with, you won't need separate agent and master VMs; this VM can act in 
 
 [Learning Puppet](https://docs.puppetlabs.com/learning/introduction.html) by [Puppet Labs](https://puppetlabs.com) is licensed under [CC BY-SA 3.0 United States](http://creativecommons.org/licenses/by-sa/3.0/us).
 
-*************************
+****************************
 
 ## VM Tips
 
